@@ -32,4 +32,4 @@ let getFibonacci2 = function(n) {
   return res
 }
 
-console.log('getFibonacci2',getFibonacci2(4) )
+console.log('getFibonacci2',getFibonacci2(4))
