@@ -25,7 +25,7 @@ let myFunction = function(data) {
     }
   }
   
-  return result[lenghtData - 1]
+  return result[lenghtData-1]
 }
 const v = [1, -1, 6, -4, 2, 2]
 const sum = myFunction(v);

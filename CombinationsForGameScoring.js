@@ -28,3 +28,7 @@ let scoringOptions = function(n) {
 }
 
 console.log(scoringOptions(2));
+
+// solution 2: dynamic programming
+// runtime: O(n)
+// memory: O(1)

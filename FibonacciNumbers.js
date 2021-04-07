@@ -9,7 +9,22 @@ let getFibonacci = function(n) {
   }
   return getFibonacci(n - 1) + getFibonacci(n - 2)
 }
-console.log(getFibonacci(4));
+console.log('first', getFibonacci(5));
+
+// Memorized
+// runtime: O(n).
+// memory: O(n)
+let getFibonacciUseMemorized = function(n, result = []) {
+  if (n ===0 || n === 1) {
+    return n
+  }
+  if (result[n] > 0) {
+    return result[n]
+  }
+  result[n] = getFibonacciUseMemorized(n - 1, result) + getFibonacciUseMemorized(n - 2, result)
+  return result[n]  
+}
+console.log('second', getFibonacciUseMemorized(100));
 
 // Interative
 // runtime: O(n)
@@ -32,4 +47,4 @@ let getFibonacci2 = function(n) {
   return res
 }
 
-console.log('getFibonacci2',getFibonacci2(4))
+console.log('third',getFibonacci2(100))
